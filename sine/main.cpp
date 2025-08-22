@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cmath>
+#include <cassert>
 
 int main(int argc,char * argv[]){
   	double x = 1.44;
@@ -14,5 +16,6 @@ int main(int argc,char * argv[]){
 	);
 
 	std::cout << "sin(" << x << ") = " << y << std::endl;
-	return 0;
+	assert(y==std::sin(x));
+        return 0;
 }
