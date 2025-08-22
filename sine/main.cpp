@@ -13,6 +13,6 @@ int main(int argc,char * argv[]){
 	  :"st"
 	);
 
-	std::cout << "y = " << y << std::endl;
+	std::cout << "sin(" << x << ") = " << y << std::endl;
 	return 0;
 }
