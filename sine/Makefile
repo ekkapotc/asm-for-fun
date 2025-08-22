@@ -1,5 +1,5 @@
 TARGET := main
-SRC := $(TARGET).cpp
+SRC := $(wildcard *.cpp)
 OBJ := $(SRC:.cpp=.o)
 
 CXX := g++
