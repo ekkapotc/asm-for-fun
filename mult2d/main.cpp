@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cassert>
 
 int main(int argc, char *argv[]) {
   double x = 1.7;
@@ -16,5 +17,6 @@ int main(int argc, char *argv[]) {
                        : "xmm0", "xmm1");
 
   std::cout << "z = " << z << std::endl;
+  assert(z==x*y);
   return 0;
 }
