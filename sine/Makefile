@@ -1,6 +1,6 @@
 TARGET := main
 SRC := $(TARGET).cpp
-OBJ := $(TARGET).o
+OBJ := $(SRC:.cpp=.o)
 
 CXX := g++
 CXXFLAGS := -Wall -g -O0
